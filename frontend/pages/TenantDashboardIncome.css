@@ -1,0 +1,31 @@
+/* EKUT tenant income */
+.tenant-income-page { display: grid; gap: 22px; }
+.tenant-income-intro { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+.tenant-income-intro h2 { margin:8px 0; color:#153f70; font-size:28px; }
+.tenant-income-intro p { margin:0; color:#8396b3; }
+.tenant-income-stats { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.tenant-income-stat { padding:24px; display:flex; flex-direction:column; gap:12px; min-width:0; }
+.tenant-income-stat > span { color:#6b85a5; font-size:14px; font-weight:600; }
+.tenant-income-stat > strong { color:#16477f; font-size:clamp(22px,2.3vw,32px); overflow-wrap:anywhere; }
+.tenant-income-stat > small { color:#92a3ba; font-size:12px; }
+.tenant-income-history { padding:24px; min-width:0; }
+.tenant-income-loading { padding:32px; color:#6b85a5; }
+.tenant-income-table-wrap { overflow-x:auto; width:100%; }
+.tenant-income-table { width:100%; border-collapse:collapse; text-align:left; min-width:680px; }
+.tenant-income-table th { color:#7088a7; font-size:12px; padding:15px 12px; border-bottom:1px solid #e5edf7; }
+.tenant-income-table td { padding:16px 12px; border-bottom:1px solid #eef2f8; color:#365779; font-size:13px; }
+.tenant-income-table td small { display:block; margin-top:4px; color:#91a3ba; }
+.tenant-income-transfer-status { display:inline-block; border-radius:999px; padding:7px 12px; background:#fff2df; color:#aa6c16; font-weight:700; font-size:12px; }
+.tenant-income-transfer-status.is-completed { background:#e6f7ef; color:#178660; }
+@media (max-width:650px) { .tenant-income-stats { grid-template-columns:1fr; } .tenant-income-history { padding:16px; } }
+
+.tenant-income-filter { padding:22px 24px; display:grid; gap:16px; }
+.tenant-income-filter-heading h3 { margin:0 0 6px; color:#174779; font-size:17px; }
+.tenant-income-filter-heading p { margin:0; color:#8799b2; font-size:13px; line-height:1.5; }
+.tenant-income-filter-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)) auto; gap:14px; align-items:end; }
+.tenant-income-filter-fields label { display:grid; gap:7px; color:#55718f; font-size:13px; font-weight:600; }
+.tenant-income-filter-fields input { width:100%; min-height:42px; border:1px solid #dce7f4; border-radius:10px; padding:9px 12px; background:#fff; color:#234a73; font:inherit; box-sizing:border-box; }
+.tenant-income-filter-fields input:focus { outline:2px solid #b8dcff; border-color:#1681d9; }
+.tenant-income-filter-actions { display:flex; gap:8px; flex-wrap:wrap; }
+.tenant-income-filter-actions .tenant-primary-button, .tenant-income-filter-actions .tenant-secondary-button { min-height:42px; white-space:nowrap; }
+@media (max-width:760px) { .tenant-income-filter-fields { grid-template-columns:1fr; } .tenant-income-filter { padding:17px; } }
