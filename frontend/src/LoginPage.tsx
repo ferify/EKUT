@@ -5,7 +5,7 @@ import logo from './assets/ekutlogo.png'
 import mascot from './assets/maskotcartremove.png'
 import './LoginPage.css'
 
-const API_URL = 'http://localhost:3000'
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000'
 
 function LoginPage() {
   const [isResetMode, setIsResetMode] = useState(false)

@@ -3,35 +3,42 @@
   display: grid;
   gap: 22px;
 }
+
 .tenant-rental-intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
 }
+
 .tenant-rental-intro h2 {
   margin: 8px 0;
   color: #243047;
   font-size: clamp(1.35rem, 2vw, 1.8rem);
 }
+
 .tenant-rental-intro p {
   margin: 0;
   color: #788397;
   line-height: 1.6;
 }
+
 .tenant-rental-history {
   min-width: 0;
   padding: 22px;
 }
+
 .tenant-rental-table-wrap {
   width: 100%;
   overflow-x: auto;
 }
+
 .tenant-rental-table {
   width: 100%;
   border-collapse: collapse;
   white-space: nowrap;
 }
+
 .tenant-rental-table th,
 .tenant-rental-table td {
   padding: 15px 13px;
@@ -40,17 +47,21 @@
   vertical-align: middle;
   font-size: 0.88rem;
 }
+
 .tenant-rental-table th {
   color: #7a8497;
   font-weight: 600;
   background: #fafbfe;
 }
+
 .tenant-rental-table td {
   color: #3c475b;
 }
+
 .tenant-rental-table td strong {
   color: #253149;
 }
+
 .tenant-rental-status {
   display: inline-flex;
   align-items: center;
@@ -61,22 +72,27 @@
   background: #f0f2f6;
   color: #5c6678;
 }
+
 .tenant-rental-status.status-paid {
   background: #e6f7ee;
   color: #18834d;
 }
+
 .tenant-rental-status.status-pending {
   background: #fff4d8;
   color: #946200;
 }
+
 .tenant-rental-status.status-overdue {
   background: #ffe9e8;
   color: #b42318;
 }
+
 .tenant-rental-status.status-unknown {
   background: #f0f2f6;
   color: #5c6678;
 }
+
 .tenant-rental-proof-link {
   padding: 0;
   border: 0;
@@ -87,14 +103,17 @@
   text-decoration: none;
   cursor: pointer;
 }
+
 .tenant-rental-proof-link:hover {
   text-decoration: underline;
 }
+
 .tenant-rental-proof {
   display: grid;
   justify-items: start;
   gap: 8px;
 }
+
 .tenant-rental-proof-controls {
   display: grid;
   justify-items: start;
@@ -102,6 +121,7 @@
   min-width: 140px;
   white-space: normal;
 }
+
 .tenant-rental-upload-label,
 .tenant-rental-sample-button,
 .tenant-rental-upload-button {
@@ -115,17 +135,21 @@
   font-weight: 600;
   cursor: pointer;
 }
+
 .tenant-rental-upload-label input {
   display: none;
 }
+
 .tenant-rental-sample-button {
   color: #4567d7;
   background: #eef2ff;
 }
+
 .tenant-rental-upload-button:disabled {
   opacity: 0.65;
   cursor: wait;
 }
+
 .tenant-rental-proof-modal {
   position: fixed;
   z-index: 1000;
@@ -135,6 +159,7 @@
   padding: 24px;
   background: rgb(18 27 43 / 75%);
 }
+
 .tenant-rental-proof-modal-content {
   display: grid;
   gap: 14px;
@@ -145,17 +170,20 @@
   background: #fff;
   box-shadow: 0 16px 48px rgb(0 0 0 / 25%);
 }
+
 .tenant-rental-proof-modal-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
+
 .tenant-rental-proof-modal-heading h2 {
   margin: 0;
   color: #243047;
   font-size: 1rem;
 }
+
 .tenant-rental-proof-modal-heading button {
   border: 0;
   border-radius: 6px;
@@ -165,44 +193,53 @@
   font: inherit;
   cursor: pointer;
 }
-.tenant-rental-proof-modal-content > img {
+
+.tenant-rental-proof-modal-content>img {
   display: block;
   max-width: 100%;
   max-height: calc(90vh - 90px);
   justify-self: center;
   object-fit: contain;
 }
+
 .tenant-rental-muted,
 .tenant-rental-note {
   color: #8a94a6;
   font-size: 0.83rem;
 }
+
 .tenant-rental-note {
   margin: 18px 0 0;
   line-height: 1.6;
 }
+
 .tenant-rental-empty {
   padding: 38px 24px;
   text-align: center;
   color: #788397;
 }
+
 .tenant-rental-empty strong {
   display: block;
   margin: 12px 0 6px;
   color: #2b3549;
 }
+
 .tenant-rental-empty p {
   margin: 0;
 }
+
 .tenant-rental-empty-icon {
   font-size: 2rem;
   color: #7c8ce8;
 }
+
 @media (max-width: 720px) {
   .tenant-rental-intro {
     align-items: flex-start;
     flex-direction: column;
   }
+
   .tenant-rental-history {
     padding: 14px;
   }

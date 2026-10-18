@@ -1,4 +1,3 @@
-
 .admin-layout {
   display: flex;
   min-height: 100vh;
@@ -176,7 +175,7 @@
   background: linear-gradient(145deg, #f3f8ff, #fffaf1);
 }
 
-.admin-help > span {
+.admin-help>span {
   display: block;
   margin-bottom: 9px;
   font-size: 23px;
@@ -362,7 +361,7 @@
   color: #8161cb;
 }
 
-.admin-stat-card > strong {
+.admin-stat-card>strong {
   display: block;
   margin-top: 17px;
   color: #173c72;
@@ -370,7 +369,7 @@
   font-weight: 900;
 }
 
-.admin-stat-card > p {
+.admin-stat-card>p {
   margin: 8px 0 0;
   color: #9aa7ba;
   font-size: 9px;
@@ -527,7 +526,7 @@
   cursor: pointer;
 }
 
-.admin-rental-proof-modal-content > img {
+.admin-rental-proof-modal-content>img {
   display: block;
   max-width: 100%;
   max-height: calc(90vh - 90px);
